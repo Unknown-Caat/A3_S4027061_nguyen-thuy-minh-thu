@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+	  <title>Cozy zone</title>
+	  <link rel="icon" type="image/x-icon" href="LOGO.png">
+	  <link rel="stylesheet" href="styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  	
+</head>
+<body>
+  	
+  	<div class="home-page">
+		<div id="particles-js" class="particles-layer"></div>    
+    	<img class="windowwall-1-icon" alt="" src="images/WINDOW+WALL 1.png">
+		<img class="table-1-icon" alt="" src="images/TABLE 1.png">
+		<img class="button-icon" alt="" src="NIGHT ICON.svg">
+		<img class="button-icon day-icon" id="toggleButton" alt="DAY ICON" src="DAY ICON.svg">
+    		
+    	<div class="fish-tank">
+				<img class="auarium-1" alt="" src="images/AQUARIUM 1.png">
+				<div class="fish-container">
+					<img class="fish-1-icon" alt="fish" src="images/FISH.png">
+					<img class="fish-2-icon" alt="fish" src="images/FISH.png">
+					<img class="fish-3-icon" alt="fish" src="images/FISH.png">
+				</div>			
+      			<img class="glass-1-icon" alt="" src="images/GLASS 1.png">     			
+      			<img class="frame-1" alt="" src="images/FRAME 1.png"> 	
+    	</div>
+
+    	<div class="NIGHT">
+    			<img class="night-light" id="nightOverlay" alt="" src= "NIGHT LIGHT.svg">
+				<audio id="night-sound"> <source src="Sound/ambient-night.mp3" type="audio/ogg"> </audio>
+		</div>
+
+		<div class="DAY">
+				<audio id="day-sound"> <source src="Sound/ambient-morning.mp3" type="audio/ogg"> </audio>
+		</div>
+
+    		<img class="wolf-1-icon" alt="" src="images/WOLF 1.png">
+
+			<div class="music">
+				<img id="music-player-icon" class="music-player-icon" alt="" src="images/MUSIC PLAYER.png">
+				<audio id="pressing-sound">
+					<source src="Sound/music-player-pressing.mp3" type="audio/ogg">
+				</audio>
+				<audio id="music-player">
+					<source src="Sound/Pyrosion - Did You Know Better.mp3" type="audio/ogg">
+					<source src="Sound/🎍 Lofi Soul and R&B (Music For Videos) - _Day In Paris_ by Pyrosion.mp3" type="audio/ogg">
+					<source src="Sound/😶 Emotional Calm Piano (Music For Videos) - _Illusions_ by Keys Of Moon 🇺🇸.mp3" type="audio/ogg">
+				</audio>
+				<input id="volume-control" type="range" min="0" max="1" step="0.01" value="1">
+			</div>
+
+			<div class="notes">
+				<img class="to-do-1" alt="to do notes" src="images/To do 1.png" onclick="showPopup('todoPopup')">
+				<audio id="fold" src="Sound/note-fold.wav"></audio>
+    			<audio id="write" src="Sound/note-write.wav"></audio>
+				<div id="todoPopup" class="popup hidden">
+					<div class="to-do-notes-container" id="container">
+						<input type="text" id="taskInput" placeholder="What to do">
+						<button id="addTaskButton">Add Task</button>
+						<ul id="taskList"></ul>
+					</div>
+					<button class="close-button" onclick="hidePopup('todoPopup')">
+						<img src="Close-icon.svg" alt="Close">
+					</button>
+				</div>
+			</div>
+
+	<div class="clock">
+		<img class="clock-1-icon" alt="Clock icon" src="images/CLOCK 1.png" onclick="showPopup('clockPopup')">
+		<div id="clockPopup" class="popup hidden">
+			<img class="popup-content" id="CLOCK-2" alt="Clock" src="images/CLOCK-2.png">
+			<div class="time-display" id="timeDisplay"></div>
+			<button class="close-button" onclick="hidePopup('clockPopup')">
+				<img src="Close-icon.svg" alt="Close">
+			</button>
+		</div>
+	</div>
+    		<img class="lamp-1-icon" alt="" src="images/LAMP 1.png">
+    		   		
+		<div class="pet">
+				<img class="cat-1-icon" id="catIcon1" alt="" src="images/CAT-1.png">
+				<img class="cat-2-icon" id="catIcon2" alt="" src="images/CAT-2.png">
+				<audio id="cat-sound"> <source src="Sound/Cat-purr.wav"> </audio>
+		</div>
+  	</div>
+	  <div id="particles-js"></div> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
+</div>
+
+  	<script type="text/javascript" src="particles.js"> </script>
+	<script type="text/javascript" src="app.js"> </script>
+	<script src="scripts.js"></script>
+
+</body>
+</html>

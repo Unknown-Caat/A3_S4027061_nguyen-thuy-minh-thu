@@ -1,0 +1,390 @@
+
+    
+    /* Image inside pop-up */
+
+    /* Basic styles for the home page */
+    .home-page {
+        width: 1920px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        height: 1080px;
+        overflow: hidden;
+    }
+  
+    /* Position the night light to cover the entire screen */
+    .NIGHT {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1; /* Initially hidden (day mode) */
+        pointer-events: none; /* Prevent it from blocking interactions */
+    }
+  
+  /* Button styles */
+  .button-icon {
+    cursor: url(Hand-click.svg),auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; 
+    height: auto;
+  }
+  
+  /* NIGHT transition */
+  .night-light {
+    z-index: 99; 
+    opacity: 0;
+    transition: opacity 3s ease; 
+  }
+  
+
+.scene-window-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 476px;
+    height: 734px;
+    object-fit: cover;
+}
+.windowwall-1-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1922px;
+    height: 817px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.aquarium-1-icon {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 1166px;
+    height: 732px;
+    object-fit: cover;
+}
+
+.particles-layer {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 476px;
+    height: 734px;
+    object-fit: cover;
+}
+
+#particles-js {
+    pointer-events: none;
+    position: absolute;
+    background-image: url("images/SCENE\ WINDOW\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* ---- stats.js ---- */
+  .count-particles {
+    display: hidden;
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  #stats,
+  .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  
+.glass-1-icon {
+    position: absolute;
+    top: 0px;
+    left: 33px;
+    width: 1139px;
+    height: 703px;
+    object-fit: cover;
+}
+.frame-1 {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    width: 1168px;
+    height: 728px;
+    object-fit: cover;
+}
+.fish-tank {
+    position: absolute;
+    top: 0px;
+    left: 749px;
+    width: 1172px;
+    height: 734px;
+    overflow:hidden ;
+}
+
+.fish-1-icon 
+.fish-1-icon,
+.fish-2-icon,
+.fish-3-icon {
+    top: 100px;
+    right: 10%;
+    width: 100%;
+    position: absolute;
+    max-width: 100px;
+    overflow: hidden;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 3s ease-out, top 5s ease, left 4s ease-in-out;
+}
+
+
+.table-1-icon {
+    position: absolute;
+    top: 807px;
+    left: 0px;
+    width: 1923px;
+    height: 273px;
+    object-fit: cover;
+}
+
+.night-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1917px;
+    height: 1182.8px;
+}
+.wolf-1-icon {
+    position: absolute;
+    top: 607px;
+    left: 1057px;
+    width: 331px;
+    height: 293px;
+    object-fit: cover;
+
+}
+.music-player-icon {
+    position: absolute;
+    top: 784px;
+    left: 264px;
+    width: 298px;
+    height: 213px;
+    object-fit: cover;
+    z-index: 1;
+    cursor: url(Hand-click.svg),auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.music-player-icon:hover {
+    transform: scale(1.05);
+    stroke-width: 5%;
+    outline: 3px #000022 ;
+}
+
+.to-do-1 {
+    position: absolute;
+    top: 603px;
+    left: 1270px;
+    width: 343px;
+    height: 337px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.to-do-1:hover {
+    transform: scale(1.05);
+}
+
+.to-do-notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#addTaskButton {
+    border-radius: 10px;
+    background-color: rgba(171, 255, 227, 0.445);
+}
+
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: "Playpen Sans", cursive;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+
+#taskList li {
+    width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 3px solid #ccc;
+    border-radius: 3px;
+    font-size: 24px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+}
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    border-radius: 69px;
+    background-color: #d9d9d9;
+    border: 10px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-content {
+    max-width: 100%;
+    height: auto;
+    z-index: 1000;
+    margin: auto;
+}
+
+.close-button {
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    top: 25px;
+    left: 90%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    cursor: url(Hand-click.svg),auto;
+}
+
+@font-face {
+    font-family: digital-7;
+    src: url(digital-7.ttf);
+  }
+
+.time-display {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #191111;
+    z-index: 10000;
+    font-family: digital-7;
+}
+
+.clock-1-icon {
+    position: absolute;
+    top: 837px;
+    left: 1478px;
+    width: 319px;
+    height: 206px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.clock-1-icon:hover {
+    transform: scale(1.05);
+}
+
+
+.lamp-1-icon {
+    position: absolute;
+    top: 122px;
+    left: 1442px;
+    width: 479px;
+    height: 348px;
+    object-fit: cover;
+}
+
+.button-icon {
+    position: absolute;
+    top: 973px;
+    left: -23px;
+    width: 335px;
+    height: 68px;
+    overflow: hidden;
+    z-index: 100;
+    cursor: url(Hand-click.svg),auto;
+}
+.cat-2-icon {
+    position: absolute;
+    top: 490px;
+    left: 7px;
+    width: 555px;
+    height: 264px;
+    object-fit: cover;
+    cursor: url(Hand-pet.svg),auto;
+}
+
+.cat-1-icon {
+    position: absolute;
+    top: 490px;
+    left: 7px;
+    width: 555px;
+    height: 264px;
+    object-fit: cover;
+    cursor: url(Hand-pet.svg), auto;
+}
+
+
+
+
